@@ -7,6 +7,9 @@ Countdown timer app in React Native using React Hooks!
 - [Github] https://github.com/gamingumar/rn-countdown
 
 
+![Countdown Timer](assets/preview.jpeg?raw=true "countdown preview")
+
+
 ### Working
 
 
