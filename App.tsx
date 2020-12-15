@@ -85,10 +85,9 @@ export default function App() {
         </TouchableOpacity>
       </View>
 
-      <FinalNote counter={counter} />
+      <FinalNote counter={counter} total={minutes*60} />
 
       <View style={styles.row}>
-        {/* <Text style={styles.timerStyle}>15:{counter}</Text> */}
         <Text
           style={[styles.timerStyle, { color: counter < 20 ? "red" : "black" }]}
         >

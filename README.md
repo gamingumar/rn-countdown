@@ -1,5 +1,5 @@
 # rn-countdown
-Countdown timer app in React Native
+Countdown timer app in React Native using React Hooks!
 
 
 - The user should be able to enter a # of minutes (positive integer) and click a “Start”

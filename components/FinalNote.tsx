@@ -16,7 +16,7 @@ import * as Animatable from "react-native-animatable";
 import { styles } from '../styles';
 
 
-export const FinalNote = ({ counter }: { counter: Number }) => {
+export const FinalNote = ({ counter, total }: { counter: number, total: number }) => {
   const styling = [
     styles.textStyle,
     { fontStyle: "italic", fontWeight: "bold" },
@@ -26,7 +26,8 @@ export const FinalNote = ({ counter }: { counter: Number }) => {
   const msg = counter < 1 ? "Time's up!" : "More than halfway there!";
 
   const blink = counter < 11 && counter > 0;
-  const visible = counter < 20;
+  
+  const visible = counter < (total/2);
 
   return (
     <View style={{ opacity: visible ? 1 : 0 }}>
